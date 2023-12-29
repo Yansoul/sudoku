@@ -78,7 +78,7 @@ export default {
       // 生成一个新的数独游戏板
       const rawBoard = sudoku.makepuzzle()
       const solvedBoard = sudoku.solvepuzzle(rawBoard) // 完整解决的数独
-      const revealedCells = 80 // 调整这个值来控制难度（更多的数字表示更低的难度）
+      const revealedCells = 45 // 调整这个值来控制难度（更多的数字表示更低的难度）
 
       for (let i = 0; i < rawBoard.length; i++) {
         if (Math.random() > revealedCells / 81) {
@@ -174,7 +174,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-gap: 1px;
-  max-width: 500px; /* 或你希望的尺寸 */
+  max-width: 500px;
 }
 .sudoku-cell {
   border: 1px solid #ddd;

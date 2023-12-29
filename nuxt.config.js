@@ -39,5 +39,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+  // Ensure SSR is enabled (this is the default setting in Nuxt.js)
+  ssr: true, // Enable Server-Side Rendering
+
+  // Specify the deployment target (server is default for SSR)
+  target: 'server'
 }
